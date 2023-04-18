@@ -49,7 +49,7 @@ table {
 
 /*
   ========================================
-  Grid
+  Layout
   ========================================
 */
 
@@ -62,7 +62,7 @@ table {
 }
 .container {
   margin: 0 auto;
-  width: 960px;
+  width: 1200px;
 }
 
 /*
@@ -83,3 +83,496 @@ table {
   clear: both;
   *zoom: 1;
 }
+
+/*
+  ========================================
+  Aside - Contact
+  ========================================
+*/
+
+.aside {
+    width: 30%;
+    float:left;
+    border: 3px solid #C8AAA1;
+    border-right-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-photo {
+    width: 38%;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border-bottom: 2px #C8AAA1 solid;
+}
+
+.aside h2 {
+    text-transform: uppercase;
+    text-align: left;
+    font: bold 30px/20px "Roboto", sans-serif;
+    font-size: large;
+    color: #434143;
+    border-bottom: 1px #C8AAA1 solid;
+    margin-top: 20px;
+}
+
+.unit {
+    list-style-type: none;
+    height: 40px;
+    font: 13px/13px "Roboto", sans-serif;
+    
+}
+
+.unit a {
+    text-decoration: none;
+    margin-left: 15px;
+    display: inline-block;
+    padding-top: 13px;
+}
+
+li img {
+    width: 10%;
+    float:left;
+    display: block;
+    margin-top: 5px;
+}
+
+li p {
+    font: 13px/13px "Roboto", sans-serif;
+    color: #434143;
+}
+
+.unit a:link {
+    color: #434143;
+    background-color: transparent;
+  }
+
+  .unit a:visited {
+    color: #434143;
+  }
+
+  .unit a:hover {
+    color: #EB9FA3;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+/*
+  ========================================
+  Aside - Competences
+  ========================================
+*/
+
+/*
+  ========================================
+- Tech Competences
+  ========================================
+*/
+
+.tech-competences ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: #434143;
+    padding-bottom: 10px;
+    font: bold 12px/12px "Roboto", sans-serif;
+    color: #C8AAA1;
+}
+
+.items {
+    position: relative;
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+
+.nr1 {
+    background: conic-gradient(#EB9FA3 150deg, white 270deg);
+}
+
+.nr2 {
+    background: conic-gradient(#EB9FA3 150deg, white 250deg);
+}
+
+.nr3 {
+    background: conic-gradient(#EB9FA3 100deg, white 130deg);
+}
+
+.nr4 {
+    background: conic-gradient(#EB9FA3 280deg, white 340deg);
+}
+
+.items::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #434143;
+    margin: 4px;
+}
+
+
+/*
+  ========================================
+- Soft Competences
+  ========================================
+*/
+
+.soft-competences {
+    display: none;
+}
+
+.soft-competences ul {
+    list-style-type: none;
+    font: 13px/13px "Roboto", sans-serif;
+    color: #434143;
+}
+    
+.soft-competences li {
+    margin: 5px;
+}
+
+/*
+  ========================================
+Aside - Hobbies
+  ========================================
+*/
+
+.hobbies {
+    width: 311px;
+    height: 70px;
+}
+
+.hobbies-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hobbies li {
+    list-style-type: none;
+    display: block;
+}
+
+.hobbies li img {
+    width: 40px;
+}
+
+/*
+  ========================================
+  Main section
+  ========================================
+*/
+
+.main-section {
+    float: left;
+    display: block;
+    width: 65%;
+    background-color: #C8AAA1;
+}
+
+.main-section h2 {
+    text-transform: uppercase;
+    text-align: left;
+    font: bold 30px/20px "Roboto", sans-serif;
+    font-size: large;
+    color: white;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+}
+
+/*
+  ========================================
+  Main section - Header
+  ========================================
+*/
+
+header {
+    height: 230px;
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.first-name {
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #434143;
+    padding-top: 22px;
+    margin-left: 20px;
+    text-align: left;
+    font: 55px/55px "Luxurious Script", sans-serif;
+    color: white;
+}
+
+.surname {
+    font: 35px/35px "Roboto", sans-serif;
+    letter-spacing: 3px;
+    margin-left: 55px;
+    color: #434143;
+    text-transform: uppercase;
+}
+
+.job-title {
+    font: 13px/13px "Roboto", sans-serif;
+    margin-left: 55px;
+    padding-bottom: 10px;
+    color: #434143;
+    text-transform: uppercase;
+    display: inline;
+    letter-spacing: 3px;
+}
+
+.about-me {
+    margin-top: 20px;
+    font: italic 12px/12px "Roboto", sans-serif;
+    margin-left: 20px;
+    text-align: left;
+    overflow: hidden;
+    line-height: 1.6;
+    color: white;
+}
+
+/*
+  ========================================
+  Main section - Personal portfolio
+  ========================================
+*/
+
+section, .references {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.portfolio {
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.p-items {
+    margin-top: 5px;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.photo-portfolio {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #434143;
+}
+
+.p-items p {
+    font: 12px/12px "Roboto", sans-serif;
+    text-transform: uppercase;
+    padding-top: 3px;
+    color: #434143;
+}
+
+.p-items a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.p-items a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.p-items a:hover {
+    color: white;
+    background-color: transparent;
+  }
+
+.more {
+    font: bold 23px/23px "Luxurious Script", sans-serif;
+    text-align: right;
+    color: #434143;
+    display: block;
+    margin-right: 23px;
+    margin-top: 15px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.more a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.more a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.more:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+/*
+  ========================================
+  Main section - Certificates
+  ========================================
+*/
+
+.certificates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.c-items {
+    height: 100px;
+    width: 148px;
+    margin-top: 5px;
+    border: 2px solid white;
+}
+
+.flip-card {
+    background-color: #C8AAA1;
+    height: 100%;
+    width: 100%;
+    perspective: 1000px; 
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #434143;
+    padding-top: 20px;
+    font: 11px/11px "Roboto", sans-serif;
+    text-align: center;
+  }
+
+  .flip-card-front h3 {
+    text-transform: uppercase;
+    color: white;
+    }
+
+    .flip-card-front p {
+        padding-top: 5px;
+        color: #EB9FA3;
+        }
+
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-img {
+    height: 100px;
+    width: 148px;
+  }
+
+  .c-items:hover {
+    transform: scale(2.5);
+    z-index: 99999;
+  }
+
+
+/*
+  ========================================
+  Main section - Working Experience
+  ========================================
+*/
+
+.rb-container {
+    font: bold 13px/13px "Roboto", sans-serif;
+    width: 60%;
+    color: #434143;
+    margin: auto;
+    display: block;
+    position: relative;
+  }
+  
+  .rb-container ul.rb {
+    margin: 2.5em 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  .rb-container ul.rb li {
+    list-style: none;
+    margin: auto;
+    margin-left: 10em;
+    min-height: 50px;
+    border-left: 1px dashed #fff;
+    padding: 0 0 50px 30px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  .rb-container ul.rb li p {
+    text-transform: none;
+  }
+  .rb-container ul.rb li:last-child {
+    border-left: 0;
+    padding-bottom: 0;
+  }
+  
+  .rb-container ul.rb li::before {
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgba(255, 255, 255, 1);
+    border-radius: 500%;
+    background: #EB9FA3;
+    height: 20px;
+    width: 20px;
+  }
+  
+/*
+  ========================================
+  Main section - Footer
+  ========================================
+*/
+
+footer {
+    display: block;
+    height: 25px;
+    margin-top: 15px;
+    background-color: white;
+    color: #C8AAA1;
+    font: 12px/12px "Roboto", sans-serif;
+    padding-top: 6px;
+    text-align: center;
+}
+
