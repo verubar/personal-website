@@ -21,46 +21,57 @@
 
 <body>
     <main class="container">
+        <!-- Aside -->
         <aside class="aside">
             <img class="main-photo" src="assets/pictures/portrait.jpg" alt="my portrait">
             <!-- Aside - Contact -->
-            <div>
+            <section>
                 <h2>Contact</h2>
                 <ul>
-                    <li class="unit group">
+                    <li class="contact-information group">
                         <img src="assets/pictures/github.jpg" alt="github icon">
                         <a href="https://github.com/verubar" target="_blank">Github - portfolio</a></li>
-                    <li class="unit group">
+                    <li class="contact-information group">
                         <img src="assets/pictures/linkedin.jpg" alt="linkedin icon">
                         <a href="https://www.linkedin.com/in/veronika-gawlasov%C3%A1/" target="_blank">LinkedIn</a></li>
-                    <li class="unit group">
+                    <li class="contact-information group">
                         <img src="assets/pictures/place.jpg" alt="place icon">
                         <a href="https://goo.gl/maps/W72AsYKNg2qku9Ks5" target="_blank">736 01, Havířov, Czech republic</a></li>
-                    <li class="unit group">
+                    <li class="contact-information group">
                         <img src="assets/pictures/phone.jpg" alt="phone number icon">
                         <a href="tel:+420799507891">+420 799 507 891</a></li>
-                    <li class="unit group">
+                    <li class="contact-information group">
                         <img src="assets/pictures/email.jpg" alt="email address icon">
                         <a href="mailto:v.gawlasova@gmail.com">v.gawlasova@gmail.com</a></li>
                 </ul>
-            </div>
+            </section>
             <!-- Aside - Competences -->
             <div>
-                <div class="tech-competences">
+                <!-- Aside - Competences - Tech competences -->
+                <div class="tech-competences group">
                     <h2>Tech Competences</h2>
                     <ul>
-                        <li class="items nr1"></li>
-                        <li class="items nr2"></li>
-                        <li class="items nr3"></li>
-                        <li class="items nr4"></li>
+                        <li class="items nr1 tooltip">
+                            <span class="tooltiptext">70%</span>
+                        </li>
+                        <li class="items nr2 tooltip">
+                            <span class="tooltiptext">65%</span>
+                        </li>
+                        <li class="items nr3 tooltip">
+                            <span class="tooltiptext">30%</span>
+                        </li>
+                        <li class="items nr4 tooltip">
+                            <span class="tooltiptext">90%</span>
+                        </li>
                     </ul>
-                    <ul>
-                        <li>HTML 70%</li>
-                        <li>CSS 65%</li>
-                        <li>GIT 30%</li>
-                        <li>WIX 90%</li>
-                    </ul>
+                    <div class="position group">
+                        <p class="nr5">HTML5</p>
+                        <p class="nr6">CSS3</p>
+                        <p class="nr7">GIT</p>
+                        <p class="nr8">WIX</p>
+                    </div>
                 </div>
+                <!-- Aside - Competences - Soft competences -->
                 <div class="soft-competences">
                     <h2> Soft skills</h2>
                     <ul>
@@ -70,7 +81,7 @@
                         <li>Assertive</li>
                     </ul>
                 </div>
-             </div> 
+            </div> 
             <!-- Aside - Hobbies -->
             <div>
                 <h2>Hobbies</h2>
@@ -90,16 +101,16 @@
                 </ul>
             </div>
         </aside>
-        
+        <!-- Main section -->
         <div class="main-section">
-            <!-- Header -->
+            <!-- Main section - Header -->
             <header>
                 <p class="first-name">Veronika</p>
                 <p class="surname">Gawlasová</p>
                 <h1 class="job-title">Web developer</h1>
                 <p class="about-me">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quis harum eligendi illo iure a? Sapiente est placeat saepe soluta beatae optio ab nulla velit magni fugiat nihil itaque, in possimus recusandae animi quidem repellat, libero eum earum perspiciatis natus dicta, exercitationem autem quisquam. Id reiciendis dolores magni. Corrupti eveniet illum unde, repellat eaque ipsum enim accusantium at perspiciatis officia incidunt maxime provident pariatur. Modi aliquid recusandae ipsa quibusdam molestias eos autem!"</p>
             </header>
-            <!-- Personal portfolio -->
+            <!-- Main section - Personal portfolio -->
             <section>
                 <h2>Personal portfolio</h2>
                 <div class="portfolio">
@@ -130,30 +141,47 @@
                 </div>
                 <a class="more" href="https://github.com/verubar" target="_blank">More about me</a>
             </section>
-            
-            <!-- Working experience -->
-            <section class="timeline">
+            <!-- Main section - Working experience -->
+            <section>
                 <h2>Working experience</h2>
                 <div class="rb-container">
                     <ul class="rb">
-                        <li class="rb-item">Specialist of household 24/7
-                            <p>Parental leave // 2019-2023</p>
+                        <li>Parental leave // 2019-2023
+                            <details>
+                                <summary>Specialist of household 24/7</summary>
+                            </details>
                         </li>
-                        <li>Specialist of facility management
-                            <p>Hyundai Engineer Czech s.r.o. // 2017-2018<p>
-                            <a href="assets/pictures/HEC.pdf">Reference
-                            </a>
+                        <li>Hyundai Engineer Czech s.r.o. // 2017-2018
+                            <details>
+                                <summary>Specialist of facility management</summary>
+                                <p>- processing the client's requirements of Hyundai Motor Manufacturing Czech s.r.o.</p>
+                                <p>- receipt of invoices and cash receipts, their registration, correctness and monthly checks
+                                    re-invoicing of documents at HMMC</p>
+                                <p>- creation and sending of orders to suppliers, records in HMMC's internal SW</p>
+                                <p>- communication in English on a daily basis, solving the requirements of the company's managemet</p>
+                            </details>
+                            <a href="assets/pictures/HEC.pdf">Reference</a>
                         </li>
-                        <li>Deputy store manager, department manager
-                            <p>Peek & Cloppenburg s.r.o. // 2012-2017</p>
-                            <a href="assets/pictures/HEC.pdf">Reference
-                            </a>
+                        <li>Peek & Cloppenburg s.r.o. // 2012-2017
+                            <details>
+                                <summary>Deputy store manager, department manager</summary>
+                                <p>- monitoring the development and evaluation of sales numbers, setting goals and checking their fulfillment. Daily cooperation with central purchasing team in Vienna</p>
+                                <p>- through analyzes and daily reports - tracking the movement of goods, speed of sales, ordering successful products</p>
+                                <p>visual merchandising of goods with an emphasis on achieving set goals</p>
+                                <p>- daily cooperation with each departments of the company - warehouse, main cash register, company headquarters</p>
+                                <p>- sales area of ​​1200m2 - women's and men's department, more than 35 fashion brands</p>
+                                <p>- management, development, motivation and evaluation of employees, participation in employee recruitment, training new workers, organization of team building</p>
+                                <p>- effective planning and organization of employees' daily tasks and their subsequent control</p>
+                                <p>- during the absence of the store manager, responsibility for the smooth running of the sales unit o size 3000m2 with 30 employees</p>
+                                <p>- administration associated with the operation of the sales unit, solving unexpected situations</p>
+                                <p></p>
+                            </details>
+                            <a href="assets/pictures/HEC.pdf">Reference</a>
                         </li>
                     </ul>
                 </div>
             </section>
-            
-            <!-- Certificates -->
+            <!-- Main section - IT Certificates -->
             <section>
                 <h2>IT Certificates</h2>
                 <div class="certificates">
@@ -211,9 +239,9 @@
                     </div>
                 </div>
             </section>
+        <!-- Footer -->
         <footer>
             <p>&copy; 2023 Veronika Gawlasová</p>
-            
         </footer>
     </main>
 </body>

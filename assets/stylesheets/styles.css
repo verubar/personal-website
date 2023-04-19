@@ -86,7 +86,7 @@ table {
 
 /*
   ========================================
-  Aside - Contact
+  Aside
   ========================================
 */
 
@@ -120,14 +120,19 @@ table {
     margin-top: 20px;
 }
 
-.unit {
+/*
+  ========================================
+  Aside - Contact
+  ========================================
+*/
+
+.contact-information {
     list-style-type: none;
     height: 40px;
     font: 13px/13px "Roboto", sans-serif;
-    
 }
 
-.unit a {
+.contact-information a {
     text-decoration: none;
     margin-left: 15px;
     display: inline-block;
@@ -146,16 +151,16 @@ li p {
     color: #434143;
 }
 
-.unit a:link {
+.contact-information a:link {
     color: #434143;
     background-color: transparent;
   }
 
-  .unit a:visited {
+.contact-information a:visited {
     color: #434143;
   }
 
-  .unit a:hover {
+.contact-information a:hover {
     color: #EB9FA3;
     background-color: transparent;
     text-decoration: underline;
@@ -169,7 +174,7 @@ li p {
 
 /*
   ========================================
-- Tech Competences
+  Aside - Competences - Tech Competences
   ========================================
 */
 
@@ -209,6 +214,33 @@ li p {
     background: conic-gradient(#EB9FA3 280deg, white 340deg);
 }
 
+.position {
+    color: #C8AAA1;
+    font: bold 12px/12px "Roboto", sans-serif;
+    background: #434143;
+    padding-bottom: 3px;
+}
+
+.nr5 {
+    padding-left: 20px; 
+    display: inline-block;
+}
+
+.nr6 {
+    padding-left: 42px; 
+    display: inline-block;
+}
+
+.nr7 {
+    padding-left: 52px; 
+    display: inline-block;
+}
+
+.nr8 {
+    padding-left: 55px; 
+    display: inline-block;
+}
+
 .items::before {
     content: "";
     position: absolute;
@@ -219,10 +251,37 @@ li p {
     margin: 4px;
 }
 
+/*
+  ========================================
+  Aside - Competences - Tech Competences - Tooltip
+  ========================================
+*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 40px;
+    height: 18px;
+    background-color: white;
+    color: #EB9FA3;
+    text-align: center;
+    border-radius: 6px;
+    padding-top: 4px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 
 /*
   ========================================
-- Soft Competences
+  Aside - Competences - Soft competences
   ========================================
 */
 
@@ -242,7 +301,7 @@ li p {
 
 /*
   ========================================
-Aside - Hobbies
+  Aside - Hobbies
   ========================================
 */
 
@@ -299,8 +358,6 @@ Aside - Hobbies
 header {
     height: 230px;
     display: block;
-    margin-right: 20px;
-    margin-left: 20px;
 }
 
 .first-name {
@@ -347,7 +404,7 @@ header {
   ========================================
 */
 
-section, .references {
+section, .references, .header {
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -359,19 +416,19 @@ section, .references {
     justify-content: space-around;
 }
 
-.p-items {
-    margin-top: 5px;
-    width: 25%;
-    text-align: center;
-    text-decoration: none;
-}
-
 .photo-portfolio {
     width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #434143;
+}
+
+.p-items {
+    margin-top: 5px;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
 }
 
 .p-items p {
@@ -397,6 +454,12 @@ section, .references {
     color: white;
     background-color: transparent;
   }
+
+  /*
+  ========================================
+  Main section - Personal portfolio - More about me
+  ========================================
+*/
 
 .more {
     font: bold 23px/23px "Luxurious Script", sans-serif;
@@ -428,6 +491,96 @@ section, .references {
   }
 
 /*
+  ========================================
+  Main section - Working Experience
+  ========================================
+*/
+
+.rb-container {
+    width: 80%;
+    margin: auto;
+    display: block;
+    position: relative;
+  }
+  
+.rb-container ul.rb {
+    margin: 2.5em 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+.rb-container ul.rb li {
+    font: bold italic 13px/13px "Roboto", sans-serif;
+    list-style: none;
+    margin: auto;
+    margin-left: 10em;
+    min-height: 50px;
+    border-left: 1px dashed #fff;
+    padding: 0 0 50px 30px;
+    position: relative;
+    color: #434143;
+
+  }
+  
+.rb-container ul.rb li details summary {
+    font: bold 14px/14px "Roboto", sans-serif; 
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 1px #EB9FA3;
+    color: #434143;
+    word-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.rb-container ul.rb li p {
+    text-transform: none;
+    font: bold 13px/13px "Roboto", sans-serif;
+  }
+
+  .rb-container ul.rb li details p {
+    font: 13px/13px "Roboto", sans-serif;
+    list-style: none;
+    padding-bottom: 10px;
+    text-align: justify;
+    margin-right: 15px;
+    
+  }
+
+.rb-container ul.rb li:last-child {
+    border-left: 0;
+    padding-bottom: 0;
+  }
+  
+.rb-container ul.rb li::before {
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgba(255, 255, 255, 1);
+    border-radius: 500%;
+    background: #EB9FA3;
+    height: 20px;
+    width: 20px;
+  }
+
+.rb-container ul.rb li a:link {
+    color: white;
+    text-decoration: none;
+    font: 13px/13px "Roboto", sans-serif;
+    }
+    
+.rb-container ul.rb li  a:visited {
+        color: white;
+        font: 13px/13px "Roboto", sans-serif;
+    }
+    
+.rb-container ul.rb li  a:hover {
+        color: #434143;
+        background-color: transparent;
+        text-decoration: underline;
+        font: 13px/13px "Roboto", sans-serif;
+    }
+    
+  /*
   ========================================
   Main section - Certificates
   ========================================
@@ -506,59 +659,6 @@ section, .references {
     z-index: 99999;
   }
 
-
-/*
-  ========================================
-  Main section - Working Experience
-  ========================================
-*/
-
-.rb-container {
-    font: bold 13px/13px "Roboto", sans-serif;
-    width: 60%;
-    color: #434143;
-    margin: auto;
-    display: block;
-    position: relative;
-  }
-  
-  .rb-container ul.rb {
-    margin: 2.5em 0;
-    padding: 0;
-    display: inline-block;
-  }
-  
-  .rb-container ul.rb li {
-    list-style: none;
-    margin: auto;
-    margin-left: 10em;
-    min-height: 50px;
-    border-left: 1px dashed #fff;
-    padding: 0 0 50px 30px;
-    position: relative;
-    text-transform: uppercase;
-  }
-  
-  .rb-container ul.rb li p {
-    text-transform: none;
-  }
-  .rb-container ul.rb li:last-child {
-    border-left: 0;
-    padding-bottom: 0;
-  }
-  
-  .rb-container ul.rb li::before {
-    position: absolute;
-    left: -18px;
-    top: -5px;
-    content: " ";
-    border: 8px solid rgba(255, 255, 255, 1);
-    border-radius: 500%;
-    background: #EB9FA3;
-    height: 20px;
-    width: 20px;
-  }
-  
 /*
   ========================================
   Main section - Footer
@@ -570,9 +670,8 @@ footer {
     height: 25px;
     margin-top: 15px;
     background-color: white;
-    color: #C8AAA1;
+    color: #434143;
     font: 12px/12px "Roboto", sans-serif;
     padding-top: 6px;
     text-align: center;
 }
-
