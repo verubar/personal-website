@@ -33,12 +33,7 @@ footer, header, hgroup, menu, nav, section {
 html {
     font-size: 100%;
 }
-body {
-  line-height: 1.45;
-}
-p {
-    margin-bottom: 1.45em;
-}
+
 /* konec mého default stylu */
 
 ol, ul {
@@ -62,16 +57,18 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  
 }
 
 .aside {
     flex-basis: 100%;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .main {
-    flex-basis: 100%;
-    background-color: black;
+flex-basis: 100%;
+    background-color: #C8AAA1;
 }
 
 hr {
@@ -84,7 +81,7 @@ hr {
 */
 
 .main-photo {
-    width: 30%;
+    width: 25%;
     margin: 0 auto 25px;
     display: block;
     border-radius: 50%;
@@ -312,9 +309,7 @@ hr {
   */
   
   .main-section {
-      float: left;
-      display: block;
-      width: 65%;
+
       background-color: #C8AAA1;
       font: 15px/15px "Roboto", sans-serif;
       padding-left: 20px;
@@ -337,31 +332,34 @@ hr {
   */
   
   header {
-      height: 280px;
+      height: 230px;
       display: block;
+      background-color: #C8AAA1;
   }
   
   .first-name {
       letter-spacing: 2px;
       text-shadow: 2px 2px 2px #434143;
       padding-top: 22px;
-      margin-left: 20px;
+      margin-left: 40px;
       text-align: left;
       font: 55px/55px "Luxurious Script", sans-serif;
       color: white;
+      margin-bottom: 10px;
+      
   }
   
   .surname {
-      font: 35px/35px "Roboto", sans-serif;
+      font: 35px "Roboto", sans-serif;
       letter-spacing: 3px;
-      margin-left: 55px;
+      margin-left: 65px;
       color: #434143;
       text-transform: uppercase;
   }
   
   .job-title {
-      margin-left: 55px;
-      padding-bottom: 10px;
+      margin-left: 65px;
+    
       color: #434143;
       text-transform: uppercase;
       letter-spacing: 3px;
@@ -369,15 +367,13 @@ hr {
   
   .about-me {
       margin: 20px;
+      margin-left: 40px;
       font: italic 14px/14px "Roboto", sans-serif;
       text-align: left;
-      line-height: 1.6;
       color: white;
+     
   }
   
-  main.section header p.about-me {
-      padding-bottom: 20px;
-  }
   
   /*
     ========================================
@@ -386,7 +382,7 @@ hr {
   */
   
   .portfolio {
-      height: 130px;
+
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -394,9 +390,7 @@ hr {
   
   .photo-portfolio {
       width: 80%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+   
       border: 2px solid #434143;
   }
   
@@ -440,6 +434,10 @@ hr {
     Main content section - Working experience, education, other skills
     ========================================
   */
+
+  .main-section header {
+    display: none;
+  }
   
   .main-content-styling .h2 {
       color: white;
@@ -579,28 +577,15 @@ hr {
   */
   
   footer {
-      display: block;
-      height: 25px;
+  
       color: #434143;
       font: 14px/14px "Roboto", sans-serif;
       padding-top: 6px;
       text-align: center;
   }
-  
-  /*
-    ========================================
-    Mobile version
-    ========================================
-  */
-  
-  @media only screen and (max-width: 600px) and (orientation: portrait){
-  
-  .aside {
-    width: 50%;
-  }
-  
+
   main.main-section {
-    width: 50%;
+    width: 100%;
   }
-  }
+
 
