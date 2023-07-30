@@ -66,13 +66,17 @@ body {
 
 .aside {
     flex-basis: 100%;
+    margin-left: 10px;
 }
 
 .main {
     flex-basis: 100%;
-    background-color: #C8AAA1;
+    background-color: black;
 }
 
+hr {
+  border-bottom: 1px #C8AAA1 solid;
+}
 /*
   ========================================
   Aside
@@ -84,7 +88,6 @@ body {
     margin: 0 auto 25px;
     display: block;
     border-radius: 50%;
-    border-bottom: 2px #C8AAA1 solid;
     padding-top: 20px;
 }
 
@@ -92,9 +95,9 @@ body {
     text-transform: uppercase;
     text-align: left;
     font: bold 22px/22px "Roboto", sans-serif;
-    border-bottom: 1px #C8AAA1 solid;
+    /*border-bottom: 1px #C8AAA1 solid; */
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 5px; /*... necháme???*/
 }
 
 /*
@@ -134,8 +137,6 @@ body {
 
   .list li {
     height: 80px;
-    margin-left: 10px; 
-   
   }
 
   .github {
@@ -198,6 +199,11 @@ body {
     color: white;
     border-radius: 20px 0px 0px 20px;
     margin: 2px;
+  }
+
+  .tech-competences p {
+    margin-left: 10px;
+    margin-bottom: 0;
   }
   
   .html {width: 70%; background-color: #434143;} 
