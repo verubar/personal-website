@@ -99,7 +99,7 @@ table {
     border-right-style: none;
     padding-left: 20px;
     padding-right: 20px;
-    font: 15px/15px "Roboto", sans-serif;
+    font: 14px/14px "Roboto", sans-serif;
     color: #434143;
 }
 
@@ -216,7 +216,7 @@ table {
 
 .soft-competences ul {
     list-style-type: none;
-    font: 15px/15px "Roboto", sans-serif;
+    font: 14px/14px "Roboto", sans-serif;
 }
     
 .soft-competences li {
@@ -304,7 +304,7 @@ ul.reference-box li.references a {
     display: block;
     width: 65%;
     background-color: #C8AAA1;
-    font: 15px/15px "Roboto", sans-serif;
+    font: 14px/14px "Roboto", sans-serif;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -357,7 +357,7 @@ header {
 
 .about-me {
     margin: 20px;
-    font: italic 14px/14px "Roboto", sans-serif;
+    font: italic 13px/13px "Roboto", sans-serif;
     text-align: left;
     line-height: 1.6;
     color: white;
@@ -396,7 +396,7 @@ main.section header p.about-me {
 }
 
 .p-items a {
-    font: 14px/14px "Roboto", sans-serif;
+    font: 13px/13px "Roboto", sans-serif;
     text-transform: uppercase;
     padding-top: 3px;
 }
@@ -446,7 +446,7 @@ main.section header p.about-me {
     font-weight: bold;
     text-transform: uppercase;
     width: 100%;
-    font: bold 16px/16px "Roboto", sans-serif;
+    font: bold 15px/15px "Roboto", sans-serif;
     padding-left: 40px;
     margin: 20px 20px 0 20px;
 }
@@ -581,13 +581,13 @@ footer {
   ========================================
 */
 
-@media only screen and (max-width: 600px) and (orientation: portrait){
-
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  
 .aside {
-  width: 50%;
+  width: 100%;
 }
 
-main.main-section {
-  width: 50%;
+.main-section {
+  width: 100%;
 }
 }
