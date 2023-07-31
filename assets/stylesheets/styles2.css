@@ -103,7 +103,7 @@ hr {
   ========================================
 */
 .contact-information a {
-    margin-top: 32px;
+    margin-top: 23.5px;
     display: inline-block;
     text-transform: uppercase;
     margin-left: 90px;
@@ -133,7 +133,7 @@ hr {
   }
 
   .list li {
-    height: 80px;
+    height: 65px;
   }
 
   .github {
@@ -332,7 +332,7 @@ hr {
   */
   
   header {
-      height: 230px;
+      height: 30%;
       display: block;
       background-color: #C8AAA1;
   }
@@ -366,8 +366,8 @@ hr {
   }
   
   .about-me {
-      margin: 20px;
-      margin-left: 40px;
+      margin: 20px 40px;
+   
       font: italic 14px/14px "Roboto", sans-serif;
       text-align: left;
       color: white;
@@ -498,23 +498,17 @@ hr {
   
   .certificates {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
+      flex-wrap: wrap;
+    flex-direction: row;
       padding-bottom: 20px;
+      height: 150px;
   }
-  
-  .c-items {
-      height: 100px;
-      width: 148px;
-      margin-top: 5px;
-      border: 2px solid white;
-  }
+
   
   .flip-card {
+    flex-basis: 100%;
+    
       background-color: #C8AAA1;
-      height: 100%;
-      width: 100%;
       perspective: 1000px; 
     }
     
